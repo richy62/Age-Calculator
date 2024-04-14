@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age calculator app</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <main>
+    <div class="card">
+      <form id="ageForm">
+        <div class="input-fields">
+          <div class="input-container">
+            <label for="Year">Year:</label><br>
+            <select id="Year">
+              <option value="">YYYY</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <label for="Month">Month:</label><br>
+            <select id="Month">
+              <option value="">MM</option>
+              <option value="1">Jan</option>
+              <option value="2">Feb</option>
+              <option value="3">Mar</option>
+              <option value="4">Apr</option>
+              <option value="5">May</option>
+              <option value="6">Jun</option>
+              <option value="7">Jul</option>
+              <option value="8">Aug</option>
+              <option value="9">Sep</option>
+              <option value="10">Oct</option>
+              <option value="11">Nov</option>
+              <option value="12">Dec</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <label for="Day">Date:</label><br>
+            <select id="Day">
+              <option value="">DD</option>
+            </select>
+          </div>
+        </div>
+        <div class="submit-field">
+          <span class="line"></span>
+          <button type="button" onclick="calculateAge()">
+            <img src="./assets/images/icon-arrow.svg" alt="icon-arrow">
+          </button>
+        </div>
+      </form>
+      <div id="result" ></div>
+    </div>
+  </main>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
