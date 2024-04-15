@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
 
 }
-:root{
+
+:root {
     --font-Family: url("https://fonts.google.com/specimen/Poppins");
     --Weight-400: 400;
-    --Weight-700:700;
-    --Weight-800:800;
+    --Weight-700: 700;
+    --Weight-800: 800;
     --Font-size-inputs: 32px;
     --Purple: hsl(259, 100%, 65%);
     --Light-red: hsl(0, 100%, 67%);
@@ -17,26 +18,32 @@
     --Smokey-grey: hsl(0, 1%, 44%);
     --Off-black: hsl(0, 0%, 8%);
 }
-body{
+
+body {
     background-color: #e6e4e4;
 }
+
 main {
     width: 350px;
-    height: 300px;
+    height: 280px;
     background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 6px 6px 10px grey;
-    border-radius: 10px 10px 38% 10px;
+    border-radius: 10px 10px 30% 10px;
     padding: 20px;
+    /* width: calc(100% - 35%); */
+    margin: auto;
 }
-.input-fields{
-        display: flex;
-        gap: 3rem;
- }
- select {
+
+.input-fields {
+    display: flex;
+    gap: 3rem;
+}
+
+select {
     width: 4rem;
     height: 2rem;
     font-size: 12px;
@@ -44,20 +51,24 @@ main {
     margin-top: 5px;
     cursor: pointer;
 }
+
 label {
     font-size: 12px;
     color: hsl(0deg 3.25% 27.92%);
     font-weight: var(--Weight-700);
 }
+
 .submit-field {
     margin-top: 12px;
     display: flex;
     align-items: center;
 }
+
 .submit-field button {
     border: none;
     background-color: transparent;
 }
+
 .submit-field button img {
     width: 1.2rem;
     height: 1.2rem;
@@ -65,6 +76,7 @@ label {
     background-color: black;
     padding: 12px;
 }
+
 .line {
     display: inline-block;
     width: 80%;
@@ -72,18 +84,126 @@ label {
     background-color: #979797;
     margin-right: 10px;
 }
+
 #result {
     color: var(--Smokey-grey);
     font-size: 2.5rem;
     font-weight: var(--Weight-800);
 }
+
 #result span {
     color: var(--Purple);
     font-size: 2.5rem;
     font-weight: var(--Weight-800);
 }
-.final_para{
-    font-size:20px;
+
+.final_para {
+    font-size: 20px;
     color: var(--Purple);
     font-weight: var(--Weight-700);
+}
+
+@media screen and (max-width:421px) and (min-width:362px) {
+    main {
+        width: 350px;
+        height: 270px;
+        border-radius: 10px 10px 30% 10px;
+        padding: 20px;
+        width: calc(100% - 35%);
+        margin: auto;
+    }
+
+    .input-fields {
+        gap: 1.6rem;
+    }
+
+    .submit-field button img {
+        width: 1.1rem;
+        height: 1.1rem;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 2rem;
+    }
+
+    #result span {
+        font-size: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width:362px) and (min-width:287px) {
+    main {
+        width: 350px;
+        height: 270px;
+        border-radius: 10px 10px 30% 10px;
+        padding: 20px;
+        width: calc(100% - 35%);
+        margin: auto;
+    }
+
+    .input-fields {
+        gap: 1rem;
+    }
+
+    .submit-field button img {
+        width: 1.1rem;
+        height: 1.1rem;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 2rem;
+    }
+
+    #result span {
+        font-size: 2rem;
+    }
+
+    select {
+        width: 3.4rem;
+        height: 1.8rem;
+        font-size: 11px;
+    }
+
+
+}
+
+@media screen and (max-width:287px) {
+    main {
+        width: 350px;
+        height: 270px;
+        border-radius: 10px 10px 30% 10px;
+        padding: 20px;
+        width: calc(100% - 35%);
+        margin: auto;
+    }
+
+    .input-fields {
+        gap: 0.6rem;
+    }
+
+    .submit-field button img {
+        width: 1rem;
+        height: 1rem;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 1.8rem;
+    }
+
+    #result span {
+        font-size: 1.8rem;
+    }
+
+    select {
+        width: 3rem;
+        height: 1.8rem;
+        font-size: 10px;
+    }
+
+
 }
